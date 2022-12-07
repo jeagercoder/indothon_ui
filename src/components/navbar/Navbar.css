@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inria Sans';
+}
+
+a {
+    color: #000000;
+
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    border-bottom: 1px #000000 solid;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.nav__list {
+    display: flex;
+}
+
+.nav__item {
+    padding: 0 10px;
+}
+
+.btn {
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.btn__register {
+    color: #ffffff;
+    background-color: #e73541;
+}
+
+.brand,
+.header__toggle,
+.header__close {
+    display: none;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        justify-content: space-between;
+        padding: 27px;
+    }
+
+    .brand {
+        display: inline;
+    }
+
+    .header__toggle {
+        display: inline;
+        font-size: 30px;
+        color: #e73541;
+    }
+
+    .nav {
+        position: fixed;
+        flex-direction: column;
+        top: 0;
+        right: -100%;
+        background-color: #e73541;
+        color: white;
+        width: 100%;
+        height: 100vh;
+        padding: 24px 0;
+        z-index: 100;
+        transition: 0.5s;
+        justify-content: flex-start;
+    }
+
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        margin-right: 0;
+        margin-left: 20px;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .btn__login__register {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .nav__item {
+        margin: 10px 0;
+    }
+
+    .nav__item > a {
+        color: #ffffff;
+    }
+
+    .header__close {
+        position: absolute;
+        right: 25px;
+        display: block;
+        font-size: 30px;
+    }
+    .btn__register {
+        color: #e73541 !important;
+        background-color: #ffffff;
+    }
+    .nav__btn__login {
+        border-bottom: 1px #ffffff solid;
+    }
+    .show {
+        right: 0;
+    }
+
+}
+

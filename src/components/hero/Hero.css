@@ -1,0 +1,34 @@
+
+.box {
+    padding: 50px 50px;
+}
+
+
+.box__content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.hero__text {
+    width: 450px;
+    font-size: 23px;
+}
+
+
+.hero__img{
+    width: 450px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero__img {
+        width: 300px;
+    }
+    .box__content {
+        flex-direction: column-reverse;
+    }
+    .hero__text {
+        width: 270px;
+        font-size: 15px;
+    }
+}
